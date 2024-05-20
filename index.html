@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive Data Visualization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.6.2/d3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a-scene embedded style="width: 100%; height: 100%;">
+            <a-entity id="bar-chart" position="-3 1 -5"></a-entity>
+            <a-entity id="line-chart" position="0 1 -5"></a-entity>
+            <a-entity id="scatter-plot" position="3 1 -5"></a-entity>
+            <a-entity camera position="0 1.6 3"></a-entity>
+            <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
